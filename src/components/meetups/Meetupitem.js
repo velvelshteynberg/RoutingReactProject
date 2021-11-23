@@ -1,5 +1,6 @@
 import classes from  './Meetupitem.module.css';
 
+
 function MeetUpItem(props) {
     return <li className={classes.item}>
         <div className={classes.image}>
