@@ -6,7 +6,7 @@ function AllMeetupsPage() {
     const [loadedMeetups, setLoadedMeetupus] = useState([]);
     useEffect(() => {
         setIsLoading(true);
-        fetch("https://routingreactproject-default-rtdb.firebaseio.com/meetups")
+        fetch("https://routingreactproject-default-rtdb.firebaseio.com/meetups/-MpMXWuYr0wakq4XDrq1.json")
             .then((response) => {
                 return response.json();
             })
@@ -20,8 +20,8 @@ function AllMeetupsPage() {
                     meetups.push(meetup);
                 }
                 setIsLoading(false);
-
                 setLoadedMeetupus(meetups);
+                
             });
     }, []);
 
